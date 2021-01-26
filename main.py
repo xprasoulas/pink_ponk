@@ -1,4 +1,3 @@
-# from paddle import Paddle
 from turtle import Screen, Turtle
 
 WIDTH = 600
