@@ -1,5 +1,7 @@
 from turtle import Screen
+from ball import Ball
 from paddle import Paddle
+
 WIDTH = 600
 HEIGHT = 800
 
@@ -10,7 +12,8 @@ screen.bgcolor("black")
 screen.tracer()
 r_paddle = Paddle(x_position=(400, 0))
 l_paddle = Paddle(x_position=(-400, 0))
-
+ball = Ball()
+ball.move_it()
 screen.listen()
 screen.onkey(r_paddle.move_up, "Up")
 screen.onkey(r_paddle.move_down, "Down")
